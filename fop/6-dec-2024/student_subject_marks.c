@@ -1,4 +1,3 @@
-#include <math.h>
 #include <stdio.h>
 #include <string.h>
 // ![11] display marks of 3 subject for 3 students
@@ -47,6 +46,11 @@ void student_mark(Student *s,float *mark){
         s->subjects[i].mark = mark[i];
     }
 }
+
+void update_mark(Student *s,float *mark,int lenght){
+    printf("Updating Mark for Student...\n");
+    
+}
 void display_student(Student s){
     printf("\n\nDisplaying Student...\n");
     printf("Name: %s\n",s.name);
@@ -58,12 +62,14 @@ void display_student(Student s){
 
 void exo_10(){
     printf("Exo 10\n");
-    Student s[3];
+    Student s[3],*p_s;
     const char *name[] = {
         "Raphael",
         "John",
         "David"
     };
+    p_s = s;
+    float *m;
     // init_student(&s,"Raphael");
     for (int i = 0; i<3; i++) 
         init_student(&s[i],name[i]);
@@ -71,8 +77,10 @@ void exo_10(){
     student_mark(&s[0], (float[]){12.,2.,13});
     student_mark(&s[1], (float[]){15.,16.,19});
     student_mark(&s[2], (float[]){18.,12.,14});
+
+    update_mark(p_s, m, 3);
     
-     for (int i = 0; i<3; i++)
+    for (int i = 0; i<3; i++)
         display_student(s[i]);
     
 }
