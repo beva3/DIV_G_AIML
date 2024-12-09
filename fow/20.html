@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemples de Dialog Boxes</title>
+</head>
+<body>
+
+<h1>Exemples de Dialog Boxes en JavaScript</h1>
+
+<script>
+    // Exemple d'alert()
+    alert("Bienvenue sur notre site web !");
+
+    // Exemple de confirm()
+    let userConfirmed = confirm("Êtes-vous sûr de vouloir continuer ?");
+    if (userConfirmed) {
+        alert("Vous avez confirmé l'action.");
+    } 
+    else {
+        alert("Vous avez annulé l'action.");
+    }
+
+    // Exemple de prompt()
+    let userName = prompt("Quel est votre prénom ?");
+    if (userName !== null) {
+        alert("Bonjour, " + userName + " !");
+    } else {
+        alert("Aucun prénom n'a été saisi.");
+    }
+</script>
+
+</body>
+</html>

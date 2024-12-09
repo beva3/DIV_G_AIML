@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Advanced Properties Example</title>
+    <style>
+        /* 1. Border & Border-Radius */
+        .box {
+            width: 300px;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            border: 5px solid #3498db;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.5); /* Drop Shadow */
+            box-sizing: border-box;
+        }
+
+        /* 2. Background & Gradient */
+        .gradient {
+            background: linear-gradient(to right, #8e44ad, #3498db);
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* 3. Transform */
+        .transform:hover {
+            transform: rotate(15deg) scale(1.2);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* 4. Transition */
+        .button {
+            padding: 10px 20px;
+            background: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.4s ease;
+        }
+
+        .button:hover {
+            background: #e74c3c;
+        }
+
+        /* 5. Position */
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: #2ecc71;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Border & Border-Radius + Box-Sizing + Drop Shadow -->
+<div class="box">
+    <h2>CSS3 Advanced Properties</h2>
+    <p>Explore cool CSS features below.</p>
+
+    <!-- Background & Gradient -->
+    <div class="gradient">Gradient Background</div>
+
+    <!-- Transform & Transition -->
+    <button class="button transform">Hover Me</button>
+</div>
+
+<!-- Fixed Position -->
+<div class="fixed-box">I am fixed!</div>
+
+</body>
+</html>

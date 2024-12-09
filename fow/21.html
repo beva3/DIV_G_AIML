@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipuler un Tableau</title>
+</head>
+<body>
+
+<h1>Exemples de Manipulation de Tableaux en JavaScript</h1>
+
+<script>
+    // Création d'un tableau
+    let fruits = ["Pomme", "Banane", "Orange"];
+
+    // Ajouter un élément à la fin
+    fruits.push("Kiwi");
+    console.log(fruits);  // ["Pomme", "Banane", "Orange", "Kiwi"]
+
+    // Ajouter un élément au début
+    fruits.unshift("Fraise");
+    console.log(fruits);  // ["Fraise", "Pomme", "Banane", "Orange", "Kiwi"]
+
+    // Supprimer un élément à la fin
+    fruits.pop();
+    console.log(fruits);  // ["Fraise", "Pomme", "Banane", "Orange"]
+
+    // Supprimer le premier élément
+    fruits.shift();
+    console.log(fruits);  // ["Pomme", "Banane", "Orange"]
+
+    // Supprimer un élément à un index spécifique
+    fruits.splice(1, 1);  // Supprime "Banane"
+    console.log(fruits);  // ["Pomme", "Orange"]
+
+    // Parcourir le tableau avec forEach
+    fruits.forEach(function(fruit) {
+        console.log(fruit);  // Affiche chaque fruit dans le tableau
+    });
+
+    // Utiliser map pour transformer le tableau
+    let fruitsMajuscules = fruits.map(function(fruit) {
+        return fruit.toUpperCase();
+    });
+    console.log(fruitsMajuscules);  // ["POMME", "ORANGE"]
+</script>
+
+</body>
+</html>

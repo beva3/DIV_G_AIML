@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriétés CSS Avancées</title>
+    <style>
+        /* Overflow */
+        .overflow-exemple {
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            overflow: scroll; /* Affiche une barre de défilement */
+        }
+
+        /* Text-Overflow */
+        .text-overflow-exemple {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; /*Coupe le texte avec "..."*/
+            border: 1px solid gray;
+        }
+
+        /* Cursor */
+        .cursor-exemple {
+            cursor: pointer; /* Curseur devient une main */
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        /* Visibility */
+        .visibility-exemple {
+            visibility: hidden; /* L'élément est invisible mais occupe de l'espace */
+        }
+
+        /* Filter */
+        .filter-exemple {
+            width: 200px;
+            height: 200px;
+            background: url('https://via.placeholder.com/200') no-repeat center;
+            filter: grayscale(100%); /* Image en noir et blanc */
+        }
+
+        /* Backdrop-Filter */
+        .backdrop-exemple {
+            width: 200px;
+            height: 100px;
+            background: rgba(227, 225, 225, 0.7);
+            backdrop-filter: blur(50px); /* Flou de l'arrière-plan */
+            padding: 20px;
+        }
+
+        /* Object-Fit */
+        .object-fit-exemple {
+            width: 200px;
+            height: 150px;
+            object-fit: cover; /* L'image couvre tout en gardant les proportions */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Propriétés CSS Avancées</h1>
+
+<!-- Overflow -->
+<h3>Overflow</h3>
+<div class="overflow-exemple">
+    Contenu trop long pour cette boîte. Contenu trop long pour cette boîte.
+    Contenu trop long pour cette boîte. Contenu trop long pour cette boîte.
+    Contenu trop long pour cette boîte. Contenu trop long pour cette boîte.
+    Contenu trop long pour cette boîte. Contenu trop long pour cette boîte.
+    Contenu trop long pour cette boîte. Contenu trop long pour cette boîte.
+    Contenu trop long pour cette boîte. Contenu trop long pour cette boîte.
+    Contenu trop long pour cette boîte. Contenu trop long pour cette boîte.
+</div>
+
+<!-- Text-Overflow -->
+<h3>Text-Overflow</h3>
+<div class="text-overflow-exemple">
+    Ceci est un texte très long qui sera coupé.
+</div>
+
+<!-- Cursor -->
+<h3>Cursor</h3>
+<button class="cursor-exemple">Cliquer ici</button>
+
+<!-- Visibility -->
+<h3>Visibility</h3>
+<p class="visibility-exemple">Ce texte est caché.</p>
+
+<!-- Filter -->
+<h3>Filter</h3>
+<div class="filter-exemple"></div>
+
+<!-- Backdrop-Filter -->
+<h3>Backdrop-Filter</h3>
+<div class="backdrop-exemple">Texte sur fond flou</div>
+
+<!-- Object-Fit -->
+<h3>Object-Fit</h3>
+<img class="object-fit-exemple" src="https://via.placeholder.com/400x300" alt="Image Exemple">
+
+</body>
+</html>

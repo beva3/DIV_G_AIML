@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemples Break et Continue</title>
+</head>
+<body>
+
+<h1>Exemples Break et Continue en JavaScript</h1>
+
+<script>
+    // Exemple avec break
+    console.log("Exemple avec 'break' :");
+    for (let i = 0; i < 10; i++) {
+        if (i === 5) {
+            break;  // Sort de la boucle lorsque i est égal à 5
+        }
+        console.log(i);  // Affiche les nombres de 0 à 4
+    }
+
+    // Exemple avec continue
+    console.log("\nExemple avec 'continue' :");
+    for (let i = 0; i < 10; i++) {
+        if (i === 5) {
+            continue;  // Saute l'itération où i est égal à 5
+        }
+        console.log(i);  // Affiche les nombres de 0 à 9 sauf 5
+    }
+</script>
+
+</body>
+</html>

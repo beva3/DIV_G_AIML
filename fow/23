@@ -1,0 +1,11 @@
+let nombre = Math.random(); // Génère un nombre aléatoire entre 0 et 1
+let arrondi = Math.round(4.7); // Arrondit à l'entier le plus proche
+console.log(nombre, arrondi);
+
+let dateActuelle = new Date(); // Crée un objet Date avec la date actuelle
+console.log(dateActuelle);
+
+let tableau = [1, 2, 3];
+tableau.push(4); // Ajoute un élément à la fin
+tableau.pop(); // Supprime le dernier élément
+console.log(tableau);

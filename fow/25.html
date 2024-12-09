@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objet History</title>
+</head>
+<body>
+
+<button id="reculer">Reculer</button>
+<button id="avancer">Avancer</button>
+<button id="ajouterPage">Ajouter une page à l'historique</button>
+
+<script>
+    // Reculer d'une page dans l'historique
+    document.getElementById('reculer').onclick = function() {
+        window.history.back(); // Revenir à la page précédente
+    };
+
+    // Avancer d'une page dans l'historique
+    document.getElementById('avancer').onclick = function() {
+        window.history.forward(); // Avancer d'une page dans l'historique
+    };
+
+    // Ajouter une nouvelle page dans l'historique
+    document.getElementById('ajouterPage').onclick = function() {
+        window.history.pushState({}, '', '/nouvellePage');  // Ajouter un nouvel état dans l'historique sans recharger la page
+        alert('Nouvelle page ajoutée à l\'historique!');
+    };
+</script>
+
+</body>
+</html>
